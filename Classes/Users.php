@@ -1,5 +1,8 @@
 <?php
+require_once __DIR__ . '/Traits/Carte.php';
 class Users {
+    use Carte;
+    
     protected $nome;
     protected $cognome;
     protected $email;
@@ -9,7 +12,6 @@ class Users {
         $this->nome = $_nome;
         $this->cognome = $_cognome;
         $this->indirizzo = $_indirizzo;
-
     }
 
     public function setNome() {

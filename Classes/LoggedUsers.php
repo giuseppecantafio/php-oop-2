@@ -1,6 +1,8 @@
 <?php
-
+require_once __DIR__ . '/Traits/Carte.php';
 class LoggedUsers extends Users {
+    use Carte;
+    
     protected $sconto;
     protected $numeroTessera;
 

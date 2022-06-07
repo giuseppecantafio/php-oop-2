@@ -9,10 +9,20 @@ try {
 } catch (Exception $e) {
  echo 'Errore: ' . $e->getMessage();
 }
+try {
+ $utente1->setScadenzaCarta('2023/10');
+} catch (Exception $e) {
+ echo 'Errore: ' . $e->getMessage();
+}
 #utenti registrati
 $utente2 = new LoggedUsers('Marco', 'Rossi', 'Via Po 13, Milano');
 try {
  $utente2->setEmail('m.rossi@gmail.com');
+} catch (Exception $e) {
+ echo 'Errore: ' . $e->getMessage();
+}
+try {
+ $utente2->setScadenzaCarta('2023/02');
 } catch (Exception $e) {
  echo 'Errore: ' . $e->getMessage();
 }
