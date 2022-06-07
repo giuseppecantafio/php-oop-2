@@ -5,10 +5,9 @@ class Users {
     protected $email;
     protected $indirizzo;
 
-    function __construct($_nome, $_cognome, $_email, $_indirizzo){
+    function __construct($_nome, $_cognome, $_indirizzo){
         $this->nome = $_nome;
         $this->cognome = $_cognome;
-        $this->email = $_email;
         $this->indirizzo = $_indirizzo;
 
     }
@@ -27,7 +26,6 @@ class Users {
         return $this->cognome;
     }
 
-    #controllo mail da sistemare
     public function setEmail($_email) {
     if (!strpos($_email, '@') || !strpos($_email, '.')){
         throw new Exception('Email non valida');

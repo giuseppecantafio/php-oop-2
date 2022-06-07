@@ -4,8 +4,8 @@ class LoggedUsers extends Users {
     protected $sconto;
     protected $numeroTessera;
 
-    function __construct($_nome, $_cognome, $_email, $_indirizzo, $_sconto = 20) {
-        parent::__construct($_nome, $_cognome, $_email, $_indirizzo, $_sconto);
+    function __construct($_nome, $_cognome, $_indirizzo, $_sconto = 20) {
+        parent::__construct($_nome, $_cognome, $_indirizzo, $_sconto);
         $this->sconto = $_sconto;
     }
 
