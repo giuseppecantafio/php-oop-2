@@ -2,7 +2,6 @@
 require_once __DIR__.'/Classes/Users.php';
 require_once __DIR__.'/Classes/LoggedUsers.php';
 require_once __DIR__.'/Classes/Products.php';
-require_once __DIR__.'/Classes/Purchase.php';
 
 # utente non registrato
 $utente1 = new Users('Gianna', 'Neri', 'Via Santa Monica 12, Roma');
