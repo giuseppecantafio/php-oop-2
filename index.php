@@ -43,8 +43,7 @@ $utente1->setAcquisti($prodotto1);
 $utente1->setAcquisti($prodotto2);
 $utente2->setAcquisti($prodotto3);
 $utente2->setAcquisti($prodotto4);
-
-// var_dump($utente1, $utente2);
+ var_dump($utente1, $utente2);
 
 ?>
 
@@ -61,13 +60,13 @@ $utente2->setAcquisti($prodotto4);
         <h2>Scheda utente di: <?php echo $utente1->getNome().' '.$utente1->getCognome(); ?></h2>
         <h3>Tipologia utente: <?php echo $utente1->registrazione; ?></h3>
         <h3>Carrello prodotti: <?php foreach($utente1->getAcquisti() as $key => $item){ ?></h3>
-            <?php var_dump($item); } ?>
+            <?php echo $item->getProdotto().' per '.$item->getAnimale().' della '.$item->getMarca().' dal costo di '.$item->getPrezzo().'<br/>'; } ?>
     </div>
    <div>
         <h2>Scheda utente di: <?php echo $utente2->getNome().' '.$utente2->getCognome(); ?></h2>
         <h3>Tipologia utente: <?php echo $utente2->registrazione; ?></h3>
         <h3>Carrello prodotti: <?php foreach($utente2->getAcquisti() as $key => $item){ ?></h3>
-            <?php var_dump($item); } ?>
+            <?php echo $item->getProdotto().' per '.$item->getAnimale().' della '.$item->getMarca().' dal costo di '.$item->getPrezzo().'<br/>'; } ?>
 
    </div>
 </body>
