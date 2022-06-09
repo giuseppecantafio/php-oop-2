@@ -2,8 +2,8 @@
 require_once __DIR__ . '/Traits/Carte.php';
 class Users {
     use Carte;
-    
     protected $nome;
+    public $registrazione = 'Utente non registrato';
     protected $cognome;
     protected $email;
     protected $indirizzo;
